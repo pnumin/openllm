@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG 챗봇 서비스</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>PDF 지식 기반 챗봇</h1>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">안녕하세요! 궁금한 점을 PDF 문서에서 찾아 답변해 드릴게요.</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="질문을 입력하세요..." autofocus>
+            <button id="send-button">보내기</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
